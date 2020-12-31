@@ -1,4 +1,11 @@
 @import "~normalize.css";
+@import '~antd/dist/antd.css';
+
+#root,
+html,
+body {
+  height: 100%;
+}
 
 /* 样式的重置 */
 body,
@@ -73,7 +80,7 @@ textarea,
 select,
 input,
 button {
-  font-size: 12px;
+  font-size: 16px;
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f5f5f5;
@@ -148,4 +155,18 @@ button {
   bottom: 50px;
   background-color: rgba(0, 0, 0, .5);
   color: #fff;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
 }

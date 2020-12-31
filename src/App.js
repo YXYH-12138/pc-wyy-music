@@ -1,8 +1,19 @@
+import AppHeader from "./components/AppHeader"
+import AppFooter from "./components/AppFooter";
+import { HashRouter } from "react-router-dom";
+import { renderRoutes } from "react-router-config";
+import routers from "@/router";
+import ErrorBoundary from "./components/ErrorBoundary";
+
 function App() {
   return (
-    <div className="App">
-      hello
-    </div>
+    <ErrorBoundary>
+      <HashRouter>
+        <AppHeader />
+        {renderRoutes(routers)}
+        <AppFooter />
+      </HashRouter>
+    </ErrorBoundary>
   );
 }
 
