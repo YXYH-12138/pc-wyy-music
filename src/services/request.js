@@ -14,4 +14,4 @@ instance.interceptors.response.use(res => {
   return res.data;
 })
 
-export { instance };
+export default instance;

@@ -1,20 +1,14 @@
-import React, { memo, useEffect } from 'react';
+import React, { memo } from 'react';
 import { TopWrapper } from './style';
 import { dicoverMenu } from "@/common/local-data";
+
 import { NavLink, useLocation } from 'react-router-dom';
 import { renderRoutes, matchRoutes } from "react-router-config";
-import { request } from 'services/request';
 
 export default memo(function Discover({ route }) {
 
   const { pathname } = useLocation();
   const math = matchRoutes(route.routers, pathname);
-
-  useEffect(() => {
-    request({ url: '/banner' }).then(res => {
-      console.log(res)
-    })
-  }, [])
 
   return (
     <>
