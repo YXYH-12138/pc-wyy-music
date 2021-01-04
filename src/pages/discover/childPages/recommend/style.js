@@ -1,12 +1,20 @@
 import styled from 'styled-components';
 
-export const RecommendWrapper = styled.div`
-  /* height: 285px;
-  background-color: blue;
-  margin-top: -5px;
+// export const RecommendWrapper = styled.div` `
+export const Content = styled.div`
+  background-color: #fff;
+  display: flex;
+  border: 1px solid #d3d3d3;
+  border-bottom: none;
+`
 
-  .content {
-    height: 100%;
-    background-color: red;
-  } */
+export const RecommendLeft = styled.div`
+  padding: 20px;
+  width: 729px;
+`
+
+export const RecommendRight = styled.div`
+  width: 250px;
+  border: 1px solid #d3d3d3;
+  border-width: 0 1px;
 `

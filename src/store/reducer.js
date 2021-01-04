@@ -1,4 +1,4 @@
-import { combineReducers } from "redux";
+import { combineReducers } from "redux-immutable";
 // 推荐数据
 import { recommendReducer } from "../pages/discover/childPages/recommend/store";
 

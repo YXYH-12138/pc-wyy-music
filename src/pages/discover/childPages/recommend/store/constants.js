@@ -1,1 +1,10 @@
 export const TOP_BANNERS = "recommend/TOP_BANNERS";
+export const HOT_RECOMMENDS = 'recommend/HOT_RECOMMENDS';
+export const NEW_ALBUM = 'recommend/NEW_ALBUM';
+export const TOP_LIST = 'recommend/TOP_LIST';
+export const SOARING_RANKING = 'recommend/SOARING_RANKING';
+export const NEW_SONGS_RANKING = 'recommend/NEW_SONGS_RANKING';
+export const ORIGINAL_RANKING = 'recommend/ORIGINAL_RANKING';
+export const SOARING_RANKING_DETAIL = 'recommend/SOARING_RANKING_DETAIL';
+export const NEW_SONGS_RANKING_DETAIL = 'recommend/NEW_SONGS_RANKING_DETAIL';
+export const ORIGINAL_RANKING_DETAIL = 'recommend/ORIGINAL_RANKING_DETAIL';

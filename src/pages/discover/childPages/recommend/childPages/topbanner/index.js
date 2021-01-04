@@ -9,7 +9,9 @@ export default memo(function TopBanner() {
   const [index, setIndex] = useState(0);
   const bannerRef = useRef();
   const dispatch = useDispatch();
-  const { topBanners } = useSelector(state => ({ topBanners: state.recommend.topBanners }), shallowEqual);
+  const { topBanners } = useSelector(state => ({
+    topBanners: state.getIn(['recommend', 'topBanners'])
+  }), shallowEqual);
 
   useEffect(() => {
     dispatch(topBannerAction());
@@ -25,6 +27,7 @@ export default memo(function TopBanner() {
     <TopBannerWrapper bgImg={bgImg}>
       <div className="banner wrap-v2">
         <BannerLeft>
+          {/* 轮播图 */}
           <Carousel
             dots={{ className: "banner-dot" }}
             effect="fade"
